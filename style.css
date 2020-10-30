@@ -83,7 +83,7 @@ body {
 
 .section-content {
 	display: block;
-	padding-top: 212px;
+	padding-top: 210px;
 }
 
 .section-content__title {
@@ -91,6 +91,7 @@ body {
 	line-height: 70px;
 	color: #2E1449;
 	margin-bottom: 43px;
+	padding-left: 6px;
 	max-width: 527px;
 	letter-spacing:;
 }
@@ -100,6 +101,7 @@ body {
 	font-size: 21px;
 	color: #2E1449;
 	margin-top: 0;
+	padding-left: 15px;
 	line-height: 25px;
 	max-width: 577px;
 }
@@ -107,7 +109,7 @@ body {
 .section-form {
 	display: block;
 	max-width: 399px;
-	padding: 290px 138px 0 0;
+	padding: 288px 138px 0 0;
 }
 
 .section-form__take-part {
@@ -129,8 +131,8 @@ body {
 }
 
 .section-form__button {
-	margin-bottom: 12px;
-	padding: 16px 108px 16px 99px;
+	margin-bottom: 18px;
+	padding: 16px 108px 10px 99px;
 	text-decoration: none;
 	background: #7400E8;
 	color: #FFF;
