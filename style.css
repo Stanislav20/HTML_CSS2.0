@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	/*max-height: 100%;*/
 	background: url('img/Vector.svg');
 	background-repeat: no-repeat;
 	background-position: bottom right;
@@ -11,7 +10,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
-	width: 74%;
+	width: 73.5%;
 	padding: 50px 0 48px 0;
 }
 
@@ -93,7 +92,6 @@ body {
 	margin-bottom: 43px;
 	padding-left: 6px;
 	max-width: 527px;
-	letter-spacing:;
 }
 
 .section-content__description {
@@ -141,10 +139,91 @@ body {
 	text-align: center;
 	font-size: 21px;
 }
+
 .section-form__agree {
 	color: #000;
 	opacity: .5;
 	font-size: 16px;
 	line-height: 19px;
 	margin: 0;
+}
+
+@media (max-width: 1366px) {
+	body {
+		background-size: 70%;
+	}
+
+	.header {
+		width: 77%;
+		padding: 42px 0 48px 0;
+	}
+
+	.menu__item {
+  	font-size: 14px;
+  	left: 30px;
+		margin-right: 24px;
+	}	
+	
+	.menu__item_facebook {
+		background-size: 95%;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+	}
+
+	.menu__item_twitter {
+		background-size: 95%;
+		background-repeat: no-repeat;
+		width: 24px;
+		height: 24px;
+	}
+
+	.section-content {
+		padding: 102px 0 0 38px;
+	}
+
+	.section-content__title {
+		font-size: 44px;
+		line-height: 51px;
+		margin-bottom: 26px;
+		padding-left: 6px;
+		max-width: 381px;
+	}
+
+	.section-content__description {
+		font-size: 14px;
+		margin-top: 0;
+		padding-left: 8px;
+		line-height: 16px;
+		max-width: 381px;
+	}
+
+	.section-form {
+		max-width: 300px;
+		padding: 150px 45px 0 0;
+	}
+
+	.section-form__take-part {
+		font-size: 18px;
+		line-height: 23px;
+		margin-bottom: 12px;
+	}
+
+	.section-form__e-mail {
+		padding: 12px 0 12px 12px ;
+		margin-bottom: 12px;
+		box-sizing: border-box;
+		font-size: 14px;
+	}
+
+	.section-form__button {
+		margin-bottom: 12px;
+		padding: 12px 105px 12px 92px;
+		font-size: 14px;
+	}
+
+	.section-form__agree {
+		font-size: 12px;
+		line-height: 14px;
+	}
 }
