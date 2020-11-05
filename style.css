@@ -20,6 +20,39 @@ body {
 	background: url('img/logo.svg');
 }
 
+
+
+#menu__toggle {
+  opacity: 0;  /* скрывает чекбокс делая его прозрачным */
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+.menu__btn {  /* стиль кнопки */
+  display: flex;
+  align-items: center; /* расположение содержимого по центру */
+  position: fixed;
+  top: 20px;  /* расстояние сверху */
+  left: 20px;  /* расстояние слева */
+  width: 30px;  /* размер кнопки */
+  height: 30px;
+  cursor: pointer;  /* отображение курсора */
+  z-index: 1;
+}
+
 .menu {
 	display: flex;
 	align-items: center;
@@ -150,12 +183,18 @@ body {
 
 @media (max-width: 1366px) {
 	body {
-		background-size: 70%;
+		background-size: 65%;
+		padding-bottom: 240px;
+		background-position: 118% 104%; /*горизонт вертик*/
 	}
 
 	.header {
 		width: 77%;
 		padding: 42px 0 48px 0;
+	}
+
+	.menu {
+		padding-right: 8px;
 	}
 
 	.menu__item {
@@ -226,4 +265,133 @@ body {
 		font-size: 12px;
 		line-height: 14px;
 	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		background-size: 85%;
+		background-position: 260% 100%; /*горизонт вертик*/
+	}
+
+	.header {
+		width: 90%;
+	}
+
+	.menu {
+		padding-right: 4px;
+	}
+
+	.section {
+		width: 91%;
+	}
+
+	.section-content {
+		padding: 102px 0 0 0;
+	}
+
+	.section-form {
+		padding: 150px 5px 0 0;
+	}
+}
+
+@media (max-width: 375px) {
+	body {
+		background: url('img/Vector mobile.svg');
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	padding-bottom: 45px;
+	}
+
+	.header {
+		width: 85%;
+		padding: 32px 0 30px 0;
+	}
+
+/*	.menu {
+		display: none;
+	}*/
+
+
+ .menu {  /* контейнер меню */
+  display: inline;
+  position: absolute;
+  visibility: hidden;  /* меню по умолчанию скрыто */
+  top: 0;
+  left: 100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;  /* поля сверху, снизу и слева, справа */
+  list-style: none;
+  background-color: steelblue;  /* фон меню */
+  transition-duration: .25s;
+  justify-content: space-between;
+  }
+ 
+  .menu__btn > span,  /* "гамбургер" */
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  transition-duration: .25s;
+  right: 0;
+  }
+  .menu__btn > span::before {
+  content: '';
+  top: -8px;
+  }
+  .menu__btn > span::after {
+  content: '';
+  top: 8px;
+  }
+}
+
+.menu__item {  /* элементы в меню */
+  display: inline;
+  padding: 12px 24px;
+  color: black;
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: royalblue;
+}
+
+
+	.section {
+		display: block;
+		width: 80%;
+	}
+	.section-content {
+		text-align: center;
+		padding: 0 0 53px 0;
+	}
+	.section-content__title {
+		font-size: 35px;
+		line-height: 42px;
+		padding: 0;
+		max-width: 300px;
+	}
+
+	.section-content__description {
+		font-size: 16px;
+		padding-left: 10px;
+		line-height: 18px;
+		max-width: 280px;
+	}
+
+	.section-form {
+	padding: 0;
+	}
+
+	.section-form__e-mail {
+		margin-bottom: 10px;
+	}
+
+
 }
