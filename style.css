@@ -3,7 +3,8 @@ body {
 	background: url('img/Vector.svg');
 	background-repeat: no-repeat;
 	background-position: bottom right;
-	padding-bottom: 312px;
+	/*padding-bottom: 312px;*/
+	height: 100vh;
 }
 
 .header {
@@ -151,8 +152,9 @@ body {
 @media (max-width: 1366px) {
 	body {
 		background-size: 65%;
-		padding-bottom: 240px;
+		/*padding-bottom: 240px;*/
 		background-position: 118% 104%; /*горизонт вертик*/
+		/*height: 100vh;*/
 	}
 
 	.header {
@@ -238,6 +240,7 @@ body {
 	body {
 		background-size: 85%;
 		background-position: 260% 100%; /*горизонт вертик*/
+		/*height: 100vh;*/
 	}
 
 	.header {
@@ -261,9 +264,9 @@ body {
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
 	body {
-		background: url('img/Vector mobile.svg');
+		background: url('img/Vectormobile.svg');
 	background-repeat: no-repeat;
 	background-position: bottom center;
 	padding-bottom: 45px;
@@ -285,6 +288,7 @@ body {
 	.section-content {
 		text-align: center;
 		padding: 0 0 53px 0;
+
 	}
 	.section-content__title {
 		font-size: 35px;
@@ -307,6 +311,4 @@ body {
 	.section-form__e-mail {
 		margin-bottom: 10px;
 	}
-
-
 }
